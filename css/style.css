@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 header,
@@ -18,9 +18,22 @@ section {
 [class*="col"] {
   border: 1px dashed red;
 }
+
+.white-bar {
+  min-width: 20%;
+  height: 5px;
+  background-color: white;
+  display: inline-block;
+}
+.black-bar {
+  min-width: 20%;
+  height: 5px;
+  background-color: #2c3e50;
+  display: inline-block;
+}
 /*---CONTENT---*/
 
-header .container,
+header,
 footer {
   background-color: #2c3e50;
 }
@@ -30,8 +43,15 @@ footer {
   background-color: #1abc9c;
 }
 
-img[alt="img-portfolio"] {
+img[alt="img-portfolio"],
+img[alt="profile-logo"] {
   width: 300px;
   height: auto;
   margin: 10px;
+  border-radius: 10px;
+}
+
+img[alt="white-star"] {
+  width: 50px;
+  height: auto;
 }
